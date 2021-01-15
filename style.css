@@ -1,0 +1,136 @@
+#conteiner{
+    
+    display: flex;
+    widows: 100%;
+    height: max-content;    
+}
+#firstDiv {
+    font-weight: 800;
+    background-color: grey;
+    width: 20%;
+    padding: 10px;
+}
+
+.im{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+#contact {
+    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#interes {
+    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#interes > ul {
+    padding-left: 10%;
+    
+}
+
+#connect {
+    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+a{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+
+#personal {
+    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#secondDiv {
+    padding: 0px 10px 20px 30px; 
+    background-color: ghostwhite;
+    width: 40%;
+}
+
+#dato{
+    color: darkcyan;
+}
+
+#kide1, #kide2  {
+    opacity: 0.2;
+    font-family: 'Fira Code';
+    width: 20%;
+    background-color: #151515;
+    color: aliceblue;
+    padding: 5px 5px 5px 5px;
+}
+
+#kide1:hover, #kide2:hover{
+    animation-name: anim;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim{
+    0% {opacity: 0.2;}
+    25% {opacity: 0.4;}
+    50% {opacity: 0.6;}
+    75% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+
+
+.projcont{
+    height: 70%;
+    padding-top: 10px;
+    width: 90%;
+    background-color: none;
+}
+
+.minicont {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: none;
+    height: 30%;
+    font-family: Satisfy;
+}
+
+.proj{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: none;
+    width: 40%;
+    margin: 5px; 
+}
+
+.ml2 {
+    position: relative;
+    top:10%;
+    left: 5%;
+    font-size: 25px;
+    transform: rotate(-45deg);
+}
+
+.ml4 {
+    font-size: 25px;
+    transform: rotate(0deg);
+}
+
+.blue{
+    color: aqua;
+}
+
+
+
+

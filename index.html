@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Satisfy&display=swap" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+      <div id="conteiner">
+          
+         <div id="kide1">
+            <img src="factorial.png" width="100%">
+            <p><span class="blue"> function</span> fact(num){<br>
+    <span class="blue">if</span> (num == 0){<br>
+        <span class="blue">return</span> 1;<br>
+    } <br>
+    num *= fact(num-1);<br> 
+    <span class="blue">return</span> num;<br>
+}</p>
+
+<hr><br>
+
+<img src="fibonacci.jpg" width="100%">
+<p>
+    <span class="blue">function</span> fibonacci(num){<br>
+    <span class="blue">if</span> (num == 0){<br>
+        <span class="blue">return</span> 0;<br>
+    }<br>
+    <span class="blue">if</span> (num == 1){<br>
+        <span class="blue">return</span> 1;<br>
+    }<br>
+    <span class="blue">return</span> (fibonacci(num-2)+fibonacci(num-1));<br>
+}</p>
+
+         </div>
+          <div id="firstDiv">
+            <div class="photo">
+                <img src="photo.jpg" alt="" width="70%" class="im">    
+            </div>       
+                <hr>
+            <div id="contact">
+               <p style="text-align: center">CONTACT</p>
+               <hr>
+               <i class="fas fa-phone">(+995) 557 66 91 79</i>
+               <br> <br> 
+               <i class="fas fa-envelope-open-text"> d.chelishvili91@gmail.com</i>
+               <br> <br> 
+               <i class="fas fa-map-marker-alt"> Georgia, Kutaisi, Nikea's street</i>
+            </div>
+                <hr>
+            <div id="personal">
+               <p style="text-align: center">PERSONAL</p>
+               <hr>
+               <p>Birthday: &nbsp&nbsp&nbsp&nbsp&nbsp25.02.1991</p>
+               <p>Nationality: &nbspGeorgia</p>
+               <p>Languages: &nbsp&nbspGeorgian, English, Turkish</p>
+            </div>
+                <hr>
+            <div id="interes">
+               <p style="text-align: center">INTERESTS</p>
+               <hr>
+               <ul>
+                   <li><i class="fas fa-chess"> &nbsp&nbspChess</i></li> <br> 
+                   <li><i class="fas fa-laptop-code"> &nbspProgramming</i></li> <br> 
+                   <li><i class="fas fa-basketball-ball"> &nbsp&nbspSports</i></li> <br> 
+                   <li><i class="fas fa-swimmer"> &nbspFitness</i></li> 
+               </ul>
+            </div>
+                <hr>
+            <div id="connect">
+                <p style="text-align: center">CONNECT</p>
+                <hr>
+                <i class="fab fa-twitter">&nbsp&nbsp<a href="http://www.twitter.com/chelishvili15" target="_blank">twitter.com/chelishvili15</a> </i>
+                <br> <br>
+                <i class="fab fa-facebook-f">&nbsp&nbsp <a href="http://www.facebook.com/chelo151515" target="_blank">facebook.com/chelo1515</a> </i>
+            </div>
+            </div>
+            
+            <div id="secondDiv">
+                <h1>H I &nbsp&nbspI'M <br>
+<span id="dato">D A V I D&nbsp&nbsp C H E L I S H V I L I</span> <br>A N D&nbsp&nbsp T H I S &nbsp&nbspI S&nbsp&nbsp M Y<br>W O R K S<br>P O R T F O L I O</h1> 
+                <p>MY PROJECTS IN <strong>HTML</strong>, <strong>CSS</strong> and <strong>JAVASCRIPT</strong></p>
+                <hr>
+
+                <div class="projcont">
+                <div class="minicont">    
+                    <div class="proj"  onclick="calcu()">
+                        <h5 class="ml2">
+                            CALCULATOR
+                        </h5>
+                    </div>
+                    <div class="proj" onclick="bura()">
+                        <h5 class="ml4">
+    <span class="letters letters-1">Ready</span>
+    <span class="letters letters-2">Count</span>
+    <p class="letters letters-3">Bura!</p>
+                        </h5>
+                    </div> 
+                </div>
+                <div class="minicont">
+                    <div class="proj" onclick="shaliko()">
+                        <h1 class="ml3">
+                            Adventure<br>
+                            Of<br>
+                            Shaliko<br>
+                            Kvinghiadze!
+                        </h1>
+                    </div>
+                    <div class="proj">4</div>
+                </div>
+                <div class="minicont">
+                    <div class="proj">5</div>
+                    <div class="proj">6</div>
+                </div>
+                </div>
+
+            </div>
+          
+          
+          
+          <div id="kide2">
+
+          <img src="prime.gif" width="100%">    
+
+    <span class="blue">function</span> prime(num){ <br>
+    <span class="blue">if</span> (num == 1){<br>
+        <span class="blue">return false</span>;<br>
+    } <span class="blue">else</span> <br>
+    <span class="blue">if</span> (num == 2){<br>
+        <span class="blue">return true</span>;<br>
+    } <span class="blue">else</span> <br>
+    <span class="blue">for</span> (<span class="blue">let</span> i=2; i < num; i++ ){<br>
+        <span class="blue">if</span> (num % i == 0){<br>
+            <span class="blue">return false</span>;<br>
+        }<br>
+    }  <br>
+    <span class="blue">return true</span>; <br>
+} <hr>
+<p>Factorial</p>
+<input id="inp1" type="number" min="0" value=0> <br>
+<button type="submit" onclick="fact()">Submit</button>
+<input id="ans1" type="text" disabled>
+<hr>
+<p>Fibonacci</p>
+<input id="inp2" type="number" min="1" value=1 size="10"><br>
+<button type="submit" onclick="fibo()">Submit</button>
+<input id="ans2" type="text" disabled>
+<hr>
+<p>primeNumbers</p>
+<input id="inp3" type="number" min="1" value=1><br>
+<button type="submit" onclick="prim()">Submit</button>
+<input id="ans3" type="text"  disabled>
+<hr>
+              
+          </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
