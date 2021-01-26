@@ -1,4 +1,4 @@
-// Wrap every letter in a span
+// // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml2');
 console.log();
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -19,88 +19,97 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
-  //__________________________
-  var ml4 = {};
-ml4.opacityIn = [0,1];
-ml4.scaleIn = [0.2, 1];
-ml4.scaleOut = 3;
-ml4.durationIn = 800;
-ml4.durationOut = 600;
-ml4.delay = 500;
+//   //__________________________
+//   var ml4 = {};
+// ml4.opacityIn = [0,1];
+// ml4.scaleIn = [0.2, 1];
+// ml4.scaleOut = 3;
+// ml4.durationIn = 800;
+// ml4.durationOut = 600;
+// ml4.delay = 500;
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml4 .letters-1',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-1',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-2',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-2',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-3',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-3',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4',
-    opacity: 0,
-    duration: 500,
-    delay: 500
-  });
+// anime.timeline({loop: true})
+//   .add({
+//     targets: '.ml4 .letters-1',
+//     opacity: ml4.opacityIn,
+//     scale: ml4.scaleIn,
+//     duration: ml4.durationIn
+//   }).add({
+//     targets: '.ml4 .letters-1',
+//     opacity: 0,
+//     scale: ml4.scaleOut,
+//     duration: ml4.durationOut,
+//     easing: "easeInExpo",
+//     delay: ml4.delay
+//   }).add({
+//     targets: '.ml4 .letters-2',
+//     opacity: ml4.opacityIn,
+//     scale: ml4.scaleIn,
+//     duration: ml4.durationIn
+//   }).add({
+//     targets: '.ml4 .letters-2',
+//     opacity: 0,
+//     scale: ml4.scaleOut,
+//     duration: ml4.durationOut,
+//     easing: "easeInExpo",
+//     delay: ml4.delay
+//   }).add({
+//     targets: '.ml4 .letters-3',
+//     opacity: ml4.opacityIn,
+//     scale: ml4.scaleIn,
+//     duration: ml4.durationIn
+//   }).add({
+//     targets: '.ml4 .letters-3',
+//     opacity: 0,
+//     scale: ml4.scaleOut,
+//     duration: ml4.durationOut,
+//     easing: "easeInExpo",
+//     delay: ml4.delay
+//   }).add({
+//     targets: '.ml4',
+//     opacity: 0,
+//     duration: 500,
+//     delay: 500
+//   });
 
-  //______________________________________
+//   //______________________________________
 
-var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter2'>$&</span>");
+// var textWrapper = document.querySelector('.ml3');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter2'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml3 .letter2',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 2250,
-    delay: (el, i) => 150 * (i+1)
-  }).add({
-    targets: '.ml3',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+// anime.timeline({loop: true})
+//   .add({
+//     targets: '.ml3 .letter2',
+//     opacity: [0,1],
+//     easing: "easeInOutQuad",
+//     duration: 2250,
+//     delay: (el, i) => 150 * (i+1)
+//   }).add({
+//     targets: '.ml3',
+//     opacity: 0,
+//     duration: 1000,
+//     easing: "easeOutExpo",
+//     delay: 1000
+//   });
   //__________________________________________
 
   function calcu(){
-      window.open('http://calcu.chelo15.repl.co');
+      window.open('http://chelishvili15.github.io/calcu/');
   }
   function bura(){
-      window.open('http://bura.chelo15.repl.co');
+      window.open('http://chelishvili15.github.io/bura/');
   }
   function shaliko(){
-      window.open('http://shaliko.chelo15.repl.co');
+      window.open('http://chelishvili15.github.io/shaliko/');
+  }
+  function tictactoe(){
+    window.open('http://chelishvili15.github.io/Tic-Tac-Toe/');
+  }
+  function numbers(){
+    window.open('http://chelishvili15.github.io/numbers/');
+  }
+  function balls(){
+    window.open('http://chelishvili15.github.io/balls/');
   }
   //______________________________________________________
 
@@ -160,4 +169,30 @@ return 'THIS IS PRIME NUMBER';
   function prim(){
       var num = document.getElementById('inp3').value;
       document.getElementById('ans3').value = prime(num); 
+  }
+
+  var count = 0; 
+  var info = document.getElementById("firstDiv");  
+  var img = document.querySelector('.im');
+  
+  if (window.innerWidth <= 768){
+        info.style.backgroundColor = 'ghostwhite';
+        info.style.color = 'ghostwhite';
+        img.addEventListener('click', function(){
+            console.log(window.innerWidth);
+            if (count == 0){
+                info.style.height = '915px';
+                info.style.backgroundColor = 'grey';
+                info.style.color = 'cyan';
+                count = 1;
+            } else 
+            if (count == 1){
+                console.log('to');
+                info.style.height = '220px';
+                info.style.overflow= 'hidden';
+                info.style.backgroundColor = 'ghostwhite';
+                info.style.color = 'ghostwhite';
+                count = 0;
+            }
+        })
   }
